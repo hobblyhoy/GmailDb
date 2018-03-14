@@ -289,3 +289,4 @@ __pycache__/
 
 # ------- Other -------
 client_secret.json
+SecretResp/

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GmailDb.Managers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -12,12 +13,16 @@ namespace GmailDb.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            var api = new GmailApi();
+            api.ApiTest();
+
             return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
         public string Get(int id)
         {
+
             return "value";
         }
 
